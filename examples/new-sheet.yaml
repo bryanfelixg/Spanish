@@ -1,0 +1,34 @@
+id: reading-corner
+title: El rincón de lectura
+subtitle: Reading corner · A small one-page example
+pages:
+  - vocabulary:
+      - id: book
+        spanish: el libro
+        english: book
+        image: book.svg
+      - id: lamp
+        spanish: la lámpara
+        english: lamp
+        image: lamp.svg
+      - id: armchair
+        spanish: el sillón
+        english: armchair
+        image: armchair.svg
+      - id: blanket
+        spanish: la cobija
+        english: blanket
+        image: blanket.svg
+      - id: cushion
+        spanish: el cojín
+        english: cushion
+        image: cushion.svg
+      - id: shelf
+        spanish: el estante
+        english: shelving unit
+        image: shelf.svg
+    phrases:
+      - spanish: Quiero leer un libro.
+        english: I want to read a book.
+      - spanish: Enciende la lámpara, por favor.
+        english: Turn on the lamp, please.

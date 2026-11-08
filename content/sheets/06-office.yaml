@@ -1,0 +1,64 @@
+id: office
+title: La oficina
+subtitle: Home office · Working and studying
+pages:
+  - vocabulary:
+      - id: computer
+        spanish: la computadora
+        english: computer
+        image: computer.svg
+      - id: keyboard
+        spanish: el teclado
+        english: keyboard
+        image: keyboard.svg
+      - id: mouse
+        spanish: el ratón
+        english: computer mouse
+        image: mouse.svg
+      - id: desk
+        spanish: el escritorio
+        english: desk
+        image: desk.svg
+      - id: chair
+        spanish: la silla
+        english: chair
+        image: chair.svg
+      - id: notebook
+        spanish: el cuaderno
+        english: notebook
+        image: notebook.svg
+    phrases:
+      - spanish: Enciendo la computadora para trabajar.
+        english: I turn on the computer to work.
+      - spanish: Escribo mis ideas en el cuaderno.
+        english: I write my ideas in the notebook.
+  - vocabulary:
+      - id: pen
+        spanish: el bolígrafo
+        english: pen
+        image: pen.svg
+      - id: pencil
+        spanish: el lápiz
+        english: pencil
+        image: pencil.svg
+      - id: headphones
+        spanish: los audífonos
+        english: headphones
+        image: headphones.svg
+      - id: printer
+        spanish: la impresora
+        english: printer
+        image: printer.svg
+      - id: calendar
+        spanish: el calendario
+        english: calendar
+        image: calendar.svg
+      - id: scissors
+        spanish: las tijeras
+        english: scissors
+        image: scissors.svg
+    phrases:
+      - spanish: ¿Me prestas un bolígrafo?
+        english: Could you lend me a pen?
+      - spanish: Marco la reunión en el calendario.
+        english: I mark the meeting on the calendar.

@@ -1,0 +1,64 @@
+id: living-room
+title: La sala
+subtitle: Living room · Relaxing at home
+pages:
+  - vocabulary:
+      - id: sofa
+        spanish: el sofá
+        english: sofa
+        image: sofa.svg
+      - id: armchair
+        spanish: el sillón
+        english: armchair
+        image: armchair.svg
+      - id: coffee-table
+        spanish: la mesa de centro
+        english: coffee table
+        image: coffee-table.svg
+      - id: television
+        spanish: el televisor
+        english: television
+        image: television.svg
+      - id: remote
+        spanish: el control remoto
+        english: remote control
+        image: remote.svg
+      - id: book
+        spanish: el libro
+        english: book
+        image: book.svg
+    phrases:
+      - spanish: ¿Dónde está el control remoto?
+        english: Where is the remote control?
+      - spanish: Leo un libro en el sofá.
+        english: I read a book on the sofa.
+  - vocabulary:
+      - id: shelf
+        spanish: el estante
+        english: shelving unit
+        image: shelf.svg
+      - id: rug
+        spanish: la alfombra
+        english: rug
+        image: rug.svg
+      - id: curtains
+        spanish: las cortinas
+        english: curtains
+        image: curtains.svg
+      - id: plant
+        spanish: la planta
+        english: plant
+        image: plant.svg
+      - id: cushion
+        spanish: el cojín
+        english: cushion / throw pillow
+        image: cushion.svg
+      - id: window
+        spanish: la ventana
+        english: window
+        image: window.svg
+    phrases:
+      - spanish: Abre las cortinas, por favor.
+        english: Open the curtains, please.
+      - spanish: La planta está junto a la ventana.
+        english: The plant is next to the window.

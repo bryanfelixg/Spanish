@@ -1,0 +1,64 @@
+id: kitchen
+title: La cocina
+subtitle: Kitchen · Preparing and sharing food
+pages:
+  - vocabulary:
+      - id: plate
+        spanish: el plato
+        english: plate
+        image: plate.svg
+      - id: glass
+        spanish: el vaso
+        english: drinking glass
+        image: glass.svg
+      - id: cup
+        spanish: la taza
+        english: cup / mug
+        image: cup.svg
+      - id: fork
+        spanish: el tenedor
+        english: fork
+        image: fork.svg
+      - id: knife
+        spanish: el cuchillo
+        english: knife
+        image: knife.svg
+      - id: spoon
+        spanish: la cuchara
+        english: spoon
+        image: spoon.svg
+    phrases:
+      - spanish: Pon los platos en la mesa, por favor.
+        english: Put the plates on the table, please.
+      - spanish: ¿Me pasas una cuchara?
+        english: Could you pass me a spoon?
+  - vocabulary:
+      - id: pot
+        spanish: la olla
+        english: cooking pot
+        image: pot.svg
+      - id: pan
+        spanish: la sartén
+        english: frying pan
+        image: pan.svg
+      - id: stove
+        spanish: la estufa
+        english: stove
+        image: stove.svg
+      - id: microwave
+        spanish: el microondas
+        english: microwave
+        image: microwave.svg
+      - id: cutting-board
+        spanish: la tabla de cortar
+        english: cutting board
+        image: cutting-board.svg
+      - id: sponge
+        spanish: la esponja
+        english: sponge
+        image: sponge.svg
+    phrases:
+      - spanish: Calienta la sopa en el microondas.
+        english: Heat the soup in the microwave.
+      - spanish: Limpia la mesa con la esponja.
+        english: Clean the table with the sponge.

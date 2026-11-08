@@ -1,0 +1,64 @@
+id: bathroom
+title: El baño
+subtitle: Bathroom · Daily care
+pages:
+  - vocabulary:
+      - id: toilet
+        spanish: el inodoro
+        english: toilet
+        image: toilet.svg
+      - id: sink
+        spanish: el lavabo
+        english: bathroom sink
+        image: sink.svg
+      - id: shower
+        spanish: la ducha
+        english: shower
+        image: shower.svg
+      - id: soap
+        spanish: el jabón
+        english: soap
+        image: soap.svg
+      - id: shampoo
+        spanish: el champú
+        english: shampoo
+        image: shampoo.svg
+      - id: toothbrush
+        spanish: el cepillo de dientes
+        english: toothbrush
+        image: toothbrush.svg
+    phrases:
+      - spanish: Me lavo las manos con jabón.
+        english: I wash my hands with soap.
+      - spanish: Uso champú en la ducha.
+        english: I use shampoo in the shower.
+  - vocabulary:
+      - id: toothpaste
+        spanish: la pasta de dientes
+        english: toothpaste
+        image: toothpaste.svg
+      - id: towel
+        spanish: la toalla
+        english: towel
+        image: towel.svg
+      - id: toilet-paper
+        spanish: el papel higiénico
+        english: toilet paper
+        image: toilet-paper.svg
+      - id: mirror
+        spanish: el espejo
+        english: mirror
+        image: mirror.svg
+      - id: comb
+        spanish: el peine
+        english: comb
+        image: comb.svg
+      - id: hair-dryer
+        spanish: la secadora de pelo
+        english: hair dryer
+        image: hair-dryer.svg
+    phrases:
+      - spanish: ¿Dónde está la pasta de dientes?
+        english: Where is the toothpaste?
+      - spanish: Necesito una toalla limpia.
+        english: I need a clean towel.

@@ -1,0 +1,64 @@
+id: refrigerator
+title: El refrigerador
+subtitle: Refrigerator · Food and drinks
+pages:
+  - vocabulary:
+      - id: milk
+        spanish: la leche
+        english: milk
+        image: milk.svg
+      - id: eggs
+        spanish: los huevos
+        english: eggs
+        image: eggs.svg
+      - id: cheese
+        spanish: el queso
+        english: cheese
+        image: cheese.svg
+      - id: yogurt
+        spanish: el yogur
+        english: yogurt
+        image: yogurt.svg
+      - id: butter
+        spanish: la mantequilla
+        english: butter
+        image: butter.svg
+      - id: water
+        spanish: el agua
+        english: water
+        image: water.svg
+    phrases:
+      - spanish: ¿Hay leche en el refrigerador?
+        english: Is there milk in the refrigerator?
+      - spanish: Quiero un vaso de agua, por favor.
+        english: I would like a glass of water, please.
+  - vocabulary:
+      - id: juice
+        spanish: el jugo
+        english: juice
+        image: juice.svg
+      - id: apple
+        spanish: la manzana
+        english: apple
+        image: apple.svg
+      - id: carrot
+        spanish: la zanahoria
+        english: carrot
+        image: carrot.svg
+      - id: lettuce
+        spanish: la lechuga
+        english: lettuce
+        image: lettuce.svg
+      - id: tomato
+        spanish: el tomate
+        english: tomato
+        image: tomato.svg
+      - id: grapes
+        spanish: las uvas
+        english: grapes
+        image: grapes.svg
+    phrases:
+      - spanish: Lava la manzana antes de comerla.
+        english: Wash the apple before eating it.
+      - spanish: Necesitamos tomates para la ensalada.
+        english: We need tomatoes for the salad.

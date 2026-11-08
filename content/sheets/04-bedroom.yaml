@@ -1,0 +1,64 @@
+id: bedroom
+title: El dormitorio
+subtitle: Bedroom · Rest and getting dressed
+pages:
+  - vocabulary:
+      - id: bed
+        spanish: la cama
+        english: bed
+        image: bed.svg
+      - id: pillow
+        spanish: la almohada
+        english: pillow
+        image: pillow.svg
+      - id: blanket
+        spanish: la cobija
+        english: blanket
+        image: blanket.svg
+      - id: sheets
+        spanish: las sábanas
+        english: bed sheets
+        image: sheets.svg
+      - id: closet
+        spanish: el clóset
+        english: closet
+        image: closet.svg
+      - id: hanger
+        spanish: el gancho
+        english: clothes hanger
+        image: hanger.svg
+    phrases:
+      - spanish: Voy a cambiar las sábanas.
+        english: I am going to change the sheets.
+      - spanish: Cuelga la camisa en el clóset.
+        english: Hang the shirt in the closet.
+  - vocabulary:
+      - id: pajamas
+        spanish: la pijama
+        english: pajamas
+        image: pajamas.svg
+      - id: socks
+        spanish: los calcetines
+        english: socks
+        image: socks.svg
+      - id: shoes
+        spanish: los zapatos
+        english: shoes
+        image: shoes.svg
+      - id: nightstand
+        spanish: la mesa de noche
+        english: nightstand
+        image: nightstand.svg
+      - id: lamp
+        spanish: la lámpara
+        english: lamp
+        image: lamp.svg
+      - id: alarm-clock
+        spanish: el despertador
+        english: alarm clock
+        image: alarm-clock.svg
+    phrases:
+      - spanish: Apaga la lámpara, por favor.
+        english: Turn off the lamp, please.
+      - spanish: Pongo el despertador a las siete.
+        english: I set the alarm clock for seven.
