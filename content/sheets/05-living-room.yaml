@@ -27,12 +27,6 @@ pages:
         spanish: el libro
         english: book
         image: book.svg
-    phrases:
-      - spanish: ¿Dónde está el control remoto?
-        english: Where is the remote control?
-      - spanish: Leo un libro en el sofá.
-        english: I read a book on the sofa.
-  - vocabulary:
       - id: shelf
         spanish: el estante
         english: shelving unit
@@ -57,8 +51,134 @@ pages:
         spanish: la ventana
         english: window
         image: window.svg
+      - id: door
+        spanish: la puerta
+        english: door
+        image: door.svg
+      - id: light-switch
+        spanish: el interruptor
+        english: light switch
+        image: light-switch.svg
+      - id: fan
+        spanish: el ventilador
+        english: fan
+        image: fan.svg
+      - id: picture
+        spanish: el cuadro
+        english: framed picture
+        image: picture.svg
     phrases:
+      - spanish: ¿Dónde está el control remoto?
+        english: Where is the remote control?
+      - spanish: Leo un libro en el sofá.
+        english: I read a book on the sofa.
       - spanish: Abre las cortinas, por favor.
         english: Open the curtains, please.
-      - spanish: La planta está junto a la ventana.
-        english: The plant is next to the window.
+      - spanish: La planta está aquí.
+        english: The plant is here.
+      - spanish: Enciende el ventilador, por favor.
+        english: Turn on the fan, please.
+      - spanish: Apaga el televisor, por favor.
+        english: Turn off the TV, please.
+      - spanish: El cojín está en el sofá.
+        english: The cushion is on the sofa.
+      - spanish: La alfombra está limpia.
+        english: The rug is clean.
+      - spanish: El libro está en el estante.
+        english: The book is on the shelf.
+      - spanish: La ventana está abierta.
+        english: The window is open.
+      - spanish: El sillón es cómodo.
+        english: The armchair is comfortable.
+      - spanish: Cierra la puerta, por favor.
+        english: Close the door, please.
+  - vocabulary:
+      - id: lamp
+        spanish: la lámpara
+        english: lamp
+        image: lamp.svg
+      - id: blanket
+        spanish: la cobija
+        english: blanket
+        image: blanket.svg
+      - id: clock
+        spanish: el reloj
+        english: clock
+        image: clock.svg
+      - id: candle
+        spanish: la vela
+        english: candle
+        image: candle.svg
+      - id: speaker
+        spanish: la bocina
+        english: speaker
+        image: speaker.svg
+      - id: headphones
+        spanish: los audífonos
+        english: headphones
+        image: headphones.svg
+      - id: charger
+        spanish: el cargador
+        english: charger
+        image: charger.svg
+      - id: phone
+        spanish: el teléfono
+        english: phone
+        image: phone.svg
+      - id: cup
+        spanish: la taza
+        english: cup / mug
+        image: cup.svg
+      - id: glass
+        spanish: el vaso
+        english: drinking glass
+        image: glass.svg
+      - id: napkin
+        spanish: la servilleta
+        english: napkin
+        image: napkin.svg
+      - id: bowl
+        spanish: el tazón
+        english: bowl
+        image: bowl.svg
+      - id: tray
+        spanish: la bandeja
+        english: tray
+        image: tray.svg
+      - id: vase
+        spanish: el florero
+        english: vase
+        image: vase.svg
+      - id: basket
+        spanish: la canasta
+        english: basket
+        image: basket.svg
+      - id: keys
+        spanish: las llaves
+        english: keys
+        image: keys.svg
+    phrases:
+      - spanish: Enciende la lámpara, por favor.
+        english: Turn on the lamp, please.
+      - spanish: Necesito una cobija.
+        english: I need a blanket.
+      - spanish: ¿Qué hora es?
+        english: What time is it?
+      - spanish: La vela está en la mesa.
+        english: The candle is on the table.
+      - spanish: ¿Dónde están los audífonos?
+        english: Where are the headphones?
+      - spanish: Quiero escuchar música.
+        english: I want to listen to music.
+      - spanish: ¿Me pasas mi teléfono?
+        english: Could you pass me my phone?
+      - spanish: Necesito una servilleta.
+        english: I need a napkin.
+      - spanish: El vaso está vacío.
+        english: The glass is empty.
+      - spanish: El tazón está en la bandeja.
+        english: The bowl is on the tray.
+      - spanish: El florero está en la mesa.
+        english: The vase is on the table.
+      - spanish: ¿Dónde están mis llaves?
+        english: Where are my keys?

@@ -27,12 +27,6 @@ pages:
         spanish: el cuaderno
         english: notebook
         image: notebook.svg
-    phrases:
-      - spanish: Enciendo la computadora para trabajar.
-        english: I turn on the computer to work.
-      - spanish: Escribo mis ideas en el cuaderno.
-        english: I write my ideas in the notebook.
-  - vocabulary:
       - id: pen
         spanish: el bolígrafo
         english: pen
@@ -57,8 +51,134 @@ pages:
         spanish: las tijeras
         english: scissors
         image: scissors.svg
+      - id: charger
+        spanish: el cargador
+        english: charger
+        image: charger.svg
+      - id: phone
+        spanish: el teléfono
+        english: phone
+        image: phone.svg
+      - id: paper
+        spanish: el papel
+        english: paper
+        image: paper.svg
+      - id: folder
+        spanish: la carpeta
+        english: folder
+        image: folder.svg
     phrases:
+      - spanish: Enciendo la computadora.
+        english: I turn on the computer.
+      - spanish: Escribo en el cuaderno.
+        english: I write in the notebook.
       - spanish: ¿Me prestas un bolígrafo?
         english: Could you lend me a pen?
-      - spanish: Marco la reunión en el calendario.
-        english: I mark the meeting on the calendar.
+      - spanish: El calendario está aquí.
+        english: The calendar is here.
+      - spanish: Necesito el cargador.
+        english: I need the charger.
+      - spanish: No hay papel en la impresora.
+        english: There is no paper in the printer.
+      - spanish: ¿Dónde está el lápiz?
+        english: Where is the pencil?
+      - spanish: Mi teléfono está en el escritorio.
+        english: My phone is on the desk.
+      - spanish: Necesito las tijeras.
+        english: I need the scissors.
+      - spanish: ¿Dónde están los audífonos?
+        english: Where are the headphones?
+      - spanish: La carpeta está en la silla.
+        english: The folder is on the chair.
+      - spanish: Uso el teclado.
+        english: I use the keyboard.
+  - vocabulary:
+      - id: lamp
+        spanish: la lámpara
+        english: lamp
+        image: lamp.svg
+      - id: book
+        spanish: el libro
+        english: book
+        image: book.svg
+      - id: shelf
+        spanish: el estante
+        english: shelving unit
+        image: shelf.svg
+      - id: trash-can
+        spanish: el bote de basura
+        english: trash can
+        image: trash-can.svg
+      - id: light-switch
+        spanish: el interruptor
+        english: light switch
+        image: light-switch.svg
+      - id: outlet
+        spanish: el enchufe
+        english: electrical outlet
+        image: outlet.svg
+      - id: cable
+        spanish: el cable
+        english: cable
+        image: cable.svg
+      - id: eraser
+        spanish: la goma de borrar
+        english: eraser
+        image: eraser.svg
+      - id: ruler
+        spanish: la regla
+        english: ruler
+        image: ruler.svg
+      - id: stapler
+        spanish: la engrapadora
+        english: stapler
+        image: stapler.svg
+      - id: paper-clips
+        spanish: los clips
+        english: paper clips
+        image: paper-clips.svg
+      - id: envelope
+        spanish: el sobre
+        english: envelope
+        image: envelope.svg
+      - id: tape
+        spanish: la cinta adhesiva
+        english: adhesive tape
+        image: tape.svg
+      - id: glue
+        spanish: el pegamento
+        english: glue
+        image: glue.svg
+      - id: calculator
+        spanish: la calculadora
+        english: calculator
+        image: calculator.svg
+      - id: sticky-notes
+        spanish: las notas adhesivas
+        english: sticky notes
+        image: sticky-notes.svg
+    phrases:
+      - spanish: Necesito más luz.
+        english: I need more light.
+      - spanish: El libro está en el estante.
+        english: The book is on the shelf.
+      - spanish: ¿Dónde está el enchufe?
+        english: Where is the outlet?
+      - spanish: Necesito un cable.
+        english: I need a cable.
+      - spanish: ¿Me prestas la regla?
+        english: Could you lend me the ruler?
+      - spanish: Uso la goma de borrar.
+        english: I use the eraser.
+      - spanish: ¿Dónde está la engrapadora?
+        english: Where is the stapler?
+      - spanish: Necesito dos clips.
+        english: I need two paper clips.
+      - spanish: Quiero un sobre.
+        english: I want an envelope.
+      - spanish: No hay pegamento.
+        english: There is no glue.
+      - spanish: Uso la calculadora.
+        english: I use the calculator.
+      - spanish: Escribo una nota.
+        english: I write a note.

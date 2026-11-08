@@ -27,12 +27,6 @@ pages:
         spanish: el agua
         english: water
         image: water.svg
-    phrases:
-      - spanish: ¿Hay leche en el refrigerador?
-        english: Is there milk in the refrigerator?
-      - spanish: Quiero un vaso de agua, por favor.
-        english: I would like a glass of water, please.
-  - vocabulary:
       - id: juice
         spanish: el jugo
         english: juice
@@ -57,8 +51,134 @@ pages:
         spanish: las uvas
         english: grapes
         image: grapes.svg
+      - id: chicken
+        spanish: el pollo
+        english: chicken
+        image: chicken.svg
+      - id: lemon
+        spanish: el limón
+        english: lemon / lime
+        image: lemon.svg
+      - id: cucumber
+        spanish: el pepino
+        english: cucumber
+        image: cucumber.svg
+      - id: leftovers
+        spanish: las sobras
+        english: leftovers
+        image: leftovers.svg
     phrases:
-      - spanish: Lava la manzana antes de comerla.
-        english: Wash the apple before eating it.
-      - spanish: Necesitamos tomates para la ensalada.
-        english: We need tomatoes for the salad.
+      - spanish: ¿Hay leche?
+        english: Is there any milk?
+      - spanish: Quiero agua, por favor.
+        english: I would like water, please.
+      - spanish: Lava la manzana, por favor.
+        english: Wash the apple, please.
+      - spanish: Necesito dos tomates.
+        english: I need two tomatoes.
+      - spanish: ¿Dónde están las sobras?
+        english: Where are the leftovers?
+      - spanish: ¿Me pasas el queso?
+        english: Could you pass me the cheese?
+      - spanish: El yogur está frío.
+        english: The yogurt is cold.
+      - spanish: Quiero un huevo.
+        english: I want an egg.
+      - spanish: No hay mantequilla.
+        english: There is no butter.
+      - spanish: Me gustan las uvas.
+        english: I like grapes.
+      - spanish: ¿Quieres jugo?
+        english: Do you want juice?
+      - spanish: El pollo está en el refrigerador.
+        english: The chicken is in the refrigerator.
+  - vocabulary:
+      - id: orange
+        spanish: la naranja
+        english: orange
+        image: orange.svg
+      - id: strawberry
+        spanish: la fresa
+        english: strawberry
+        image: strawberry.svg
+      - id: pear
+        spanish: la pera
+        english: pear
+        image: pear.svg
+      - id: peach
+        spanish: el durazno
+        english: peach
+        image: peach.svg
+      - id: avocado
+        spanish: el aguacate
+        english: avocado
+        image: avocado.svg
+      - id: onion
+        spanish: la cebolla
+        english: onion
+        image: onion.svg
+      - id: pepper
+        spanish: el pimiento
+        english: bell pepper
+        image: pepper.svg
+      - id: broccoli
+        spanish: el brócoli
+        english: broccoli
+        image: broccoli.svg
+      - id: mushroom
+        spanish: el champiñón
+        english: mushroom
+        image: mushroom.svg
+      - id: spinach
+        spanish: la espinaca
+        english: spinach
+        image: spinach.svg
+      - id: fish
+        spanish: el pescado
+        english: fish (food)
+        image: fish.svg
+      - id: ham
+        spanish: el jamón
+        english: ham
+        image: ham.svg
+      - id: cream
+        spanish: la crema
+        english: cream
+        image: cream.svg
+      - id: mustard
+        spanish: la mostaza
+        english: mustard
+        image: mustard.svg
+      - id: mayonnaise
+        spanish: la mayonesa
+        english: mayonnaise
+        image: mayonnaise.svg
+      - id: sauce
+        spanish: la salsa
+        english: sauce
+        image: sauce.svg
+    phrases:
+      - spanish: Quiero una naranja.
+        english: I want an orange.
+      - spanish: Me gustan las fresas.
+        english: I like strawberries.
+      - spanish: La pera está madura.
+        english: The pear is ripe.
+      - spanish: Necesito un aguacate.
+        english: I need an avocado.
+      - spanish: ¿Hay cebolla?
+        english: Is there any onion?
+      - spanish: Lava el pimiento, por favor.
+        english: Wash the bell pepper, please.
+      - spanish: Quiero brócoli.
+        english: I want broccoli.
+      - spanish: No hay champiñones.
+        english: There are no mushrooms.
+      - spanish: La espinaca está aquí.
+        english: The spinach is here.
+      - spanish: ¿Quieres pescado?
+        english: Do you want fish?
+      - spanish: ¿Dónde está la mayonesa?
+        english: Where is the mayonnaise?
+      - spanish: La salsa está fría.
+        english: The sauce is cold.

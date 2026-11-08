@@ -1,6 +1,6 @@
 id: reading-corner
 title: El rincón de lectura
-subtitle: Reading corner · A small one-page example
+subtitle: Reading corner · A compact one-page example
 pages:
   - vocabulary:
       - id: book
@@ -27,8 +27,68 @@ pages:
         spanish: el estante
         english: shelving unit
         image: shelf.svg
+      - id: cup
+        spanish: la taza
+        english: cup / mug
+        image: cup.svg
+      - id: water
+        spanish: el agua
+        english: water
+        image: water.svg
+      - id: notebook
+        spanish: el cuaderno
+        english: notebook
+        image: notebook.svg
+      - id: pen
+        spanish: el bolígrafo
+        english: pen
+        image: pen.svg
+      - id: curtains
+        spanish: las cortinas
+        english: curtains
+        image: curtains.svg
+      - id: window
+        spanish: la ventana
+        english: window
+        image: window.svg
+      - id: plant
+        spanish: la planta
+        english: plant
+        image: plant.svg
+      - id: rug
+        spanish: la alfombra
+        english: rug
+        image: rug.svg
+      - id: coffee-table
+        spanish: la mesa de centro
+        english: coffee table
+        image: coffee-table.svg
+      - id: phone
+        spanish: el teléfono
+        english: phone
+        image: phone.svg
     phrases:
       - spanish: Quiero leer un libro.
         english: I want to read a book.
       - spanish: Enciende la lámpara, por favor.
         english: Turn on the lamp, please.
+      - spanish: Pon el libro en el estante.
+        english: Put the book on the shelf.
+      - spanish: Escribo en el cuaderno.
+        english: I write in the notebook.
+      - spanish: Abre las cortinas, por favor.
+        english: Open the curtains, please.
+      - spanish: Mi teléfono está aquí.
+        english: My phone is here.
+      - spanish: Necesito una cobija.
+        english: I need a blanket.
+      - spanish: El cojín está en el sillón.
+        english: The cushion is on the armchair.
+      - spanish: Quiero agua, por favor.
+        english: I would like water, please.
+      - spanish: La taza está en la mesa.
+        english: The cup is on the table.
+      - spanish: ¿Me prestas un bolígrafo?
+        english: Could you lend me a pen?
+      - spanish: La planta está en la ventana.
+        english: The plant is at the window.

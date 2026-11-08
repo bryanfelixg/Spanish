@@ -18,15 +18,39 @@ async function fixture(t) {
   return root;
 }
 
-test('starter topics have 12 vocabulary items, four phrases, and two pages each', async () => {
+test('six topics have two distinct 16-word pages and 12 unique sentences per page', async () => {
   const sheets = await loadSheets();
   assert.deepEqual(sheets.map((sheet) => sheet.id),
     ['refrigerator', 'kitchen', 'bathroom', 'bedroom', 'living-room', 'office']);
   for (const sheet of sheets) {
     assert.equal(sheet.pages.length, 2);
-    assert.equal(sheet.pages.flatMap((page) => page.vocabulary).length, 12);
-    assert.equal(sheet.pages.flatMap((page) => page.phrases).length, 4);
+    for (const page of sheet.pages) {
+      assert.equal(page.vocabulary.length, 16);
+      assert.equal(page.phrases.length, 12);
+    }
+    const words = sheet.pages.flatMap((page) => page.vocabulary);
+    assert.equal(new Set(words.map((item) => item.id)).size, 32);
+    assert.equal(new Set(words.map((item) => item.spanish)).size, 32);
+    const phrases = sheet.pages.flatMap((page) => page.phrases);
+    assert.equal(new Set(phrases.map((phrase) => phrase.spanish)).size, 24);
     assert.ok(sheet.pages.every((page) => page.vocabulary.every((item) => item.image.startsWith('data:image/svg+xml;base64,'))));
+  }
+});
+
+test('reviewed beginner sentences remain short single-clause examples', async () => {
+  const sheets = await loadSheets();
+  sheets.push(await loadSheet(path.join(projectRoot, 'examples/new-sheet.yaml')));
+  for (const sheet of sheets) {
+    for (const [index, page] of sheet.pages.entries()) {
+      for (const phrase of page.phrases) {
+        const context = `${sheet.id}, page ${index + 1}: ${phrase.spanish}`;
+        // Editorial regression guard, not a proficiency-level classifier.
+        assert.ok(phrase.spanish.split(/\s+/).length <= 8, context);
+        assert.ok(!/\b(antes de|después de|tenemos que)\b|;/i.test(phrase.spanish), context);
+        assert.ok(/[.?]$/.test(phrase.spanish), context);
+        assert.ok(/[.?]$/.test(phrase.english), context);
+      }
+    }
   }
 });
 
@@ -47,9 +71,11 @@ test('schema reports the field, rejects empty text, unknown fields, invalid IDs,
 test('limits reject excess pages, vocabulary, phrases, and duplicate vocabulary IDs', () => {
   for (const [change, pattern] of [
     [(sheet) => { sheet.pages = Array(3).fill(sheet.pages[0]); }, /pages: Too big/],
-    [(sheet) => { sheet.pages[0].vocabulary = Array(9).fill(sheet.pages[0].vocabulary[0]); }, /vocabulary: Too big/],
-    [(sheet) => { sheet.pages[0].phrases = Array(4).fill(sheet.pages[0].phrases[0]); }, /phrases: Too big/],
+    [(sheet) => { sheet.pages[0].vocabulary = Array(17).fill(sheet.pages[0].vocabulary[0]); }, /vocabulary: Too big/],
+    [(sheet) => { sheet.pages[0].phrases = Array(13).fill(sheet.pages[0].phrases[0]); }, /phrases: Too big/],
+    [(sheet) => { sheet.pages[0].phrases = sheet.pages[0].phrases.slice(0, 5); }, /phrases: Too small/],
     [(sheet) => { sheet.pages[0].vocabulary[1].id = 'book'; }, /duplicate vocabulary id/],
+    [(sheet) => { sheet.pages.push(structuredClone(sheet.pages[0])); }, /duplicate vocabulary id/],
     [(sheet) => { sheet.pages = []; }, /pages: Too small/],
     [(sheet) => { sheet.pages[0].vocabulary = []; }, /vocabulary: Too small/],
   ]) {

@@ -18,11 +18,11 @@ export const sheetSchema = z.strictObject({
       spanish: text,
       english: text,
       image: text,
-    })).min(1).max(8),
+    })).min(1).max(16),
     phrases: z.array(z.strictObject({
       spanish: text,
       english: text,
-    })).min(1).max(3),
+    })).min(6).max(12),
   })).min(1).max(2),
 });
 

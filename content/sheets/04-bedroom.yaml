@@ -27,12 +27,6 @@ pages:
         spanish: el gancho
         english: clothes hanger
         image: hanger.svg
-    phrases:
-      - spanish: Voy a cambiar las sábanas.
-        english: I am going to change the sheets.
-      - spanish: Cuelga la camisa en el clóset.
-        english: Hang the shirt in the closet.
-  - vocabulary:
       - id: pajamas
         spanish: la pijama
         english: pajamas
@@ -57,8 +51,134 @@ pages:
         spanish: el despertador
         english: alarm clock
         image: alarm-clock.svg
+      - id: shirt
+        spanish: la camisa
+        english: shirt
+        image: shirt.svg
+      - id: pants
+        spanish: los pantalones
+        english: pants
+        image: pants.svg
+      - id: dresser
+        spanish: la cómoda
+        english: dresser
+        image: dresser.svg
+      - id: laundry-basket
+        spanish: el cesto de ropa
+        english: laundry basket
+        image: laundry-basket.svg
     phrases:
+      - spanish: Las sábanas están limpias.
+        english: The sheets are clean.
+      - spanish: La camisa está en el clóset.
+        english: The shirt is in the closet.
       - spanish: Apaga la lámpara, por favor.
         english: Turn off the lamp, please.
       - spanish: Pongo el despertador a las siete.
         english: I set the alarm clock for seven.
+      - spanish: Necesito otra cobija.
+        english: I need another blanket.
+      - spanish: Los calcetines están sucios.
+        english: The socks are dirty.
+      - spanish: ¿Dónde están mis zapatos?
+        english: Where are my shoes?
+      - spanish: Tengo sueño.
+        english: I am sleepy.
+      - spanish: Quiero mi almohada.
+        english: I want my pillow.
+      - spanish: La pijama está en la cama.
+        english: The pajamas are on the bed.
+      - spanish: Necesito un gancho.
+        english: I need a hanger.
+      - spanish: Los pantalones están en la cómoda.
+        english: The pants are in the dresser.
+  - vocabulary:
+      - id: door
+        spanish: la puerta
+        english: door
+        image: door.svg
+      - id: window
+        spanish: la ventana
+        english: window
+        image: window.svg
+      - id: curtains
+        spanish: las cortinas
+        english: curtains
+        image: curtains.svg
+      - id: rug
+        spanish: la alfombra
+        english: rug
+        image: rug.svg
+      - id: mirror
+        spanish: el espejo
+        english: mirror
+        image: mirror.svg
+      - id: book
+        spanish: el libro
+        english: book
+        image: book.svg
+      - id: phone
+        spanish: el teléfono
+        english: phone
+        image: phone.svg
+      - id: charger
+        spanish: el cargador
+        english: charger
+        image: charger.svg
+      - id: chair
+        spanish: la silla
+        english: chair
+        image: chair.svg
+      - id: desk
+        spanish: el escritorio
+        english: desk
+        image: desk.svg
+      - id: fan
+        spanish: el ventilador
+        english: fan
+        image: fan.svg
+      - id: cushion
+        spanish: el cojín
+        english: cushion
+        image: cushion.svg
+      - id: sweater
+        spanish: el suéter
+        english: sweater
+        image: sweater.svg
+      - id: dress
+        spanish: el vestido
+        english: dress
+        image: dress.svg
+      - id: slippers
+        spanish: las pantuflas
+        english: slippers
+        image: slippers.svg
+      - id: belt
+        spanish: el cinturón
+        english: belt
+        image: belt.svg
+    phrases:
+      - spanish: Cierra la puerta, por favor.
+        english: Close the door, please.
+      - spanish: Abre la ventana, por favor.
+        english: Open the window, please.
+      - spanish: Las cortinas están abiertas.
+        english: The curtains are open.
+      - spanish: ¿Dónde está mi libro?
+        english: Where is my book?
+      - spanish: Mi teléfono está aquí.
+        english: My phone is here.
+      - spanish: Necesito el cargador.
+        english: I need the charger.
+      - spanish: El cojín está en la silla.
+        english: The cushion is on the chair.
+      - spanish: Enciende el ventilador, por favor.
+        english: Turn on the fan, please.
+      - spanish: Tengo frío.
+        english: I am cold.
+      - spanish: Quiero mi suéter.
+        english: I want my sweater.
+      - spanish: El vestido está limpio.
+        english: The dress is clean.
+      - spanish: ¿Dónde están mis pantuflas?
+        english: Where are my slippers?

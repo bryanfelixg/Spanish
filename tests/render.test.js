@@ -38,7 +38,7 @@ describe('print renderer', () => {
     return page;
   }
 
-  test('all starter illustrations decode and PDFs are two Letter pages with readable font sizes', async (t) => {
+  test('every topic PDF has two Letter pages, each with a 4x4 grid and 12 half-width bilingual sentences', async (t) => {
     for (const sheet of await loadSheets()) {
       const page = await pageFor(t, renderSheet(sheet));
       await checkLayout(page, sheet.id);
@@ -48,10 +48,39 @@ describe('print renderer', () => {
         pictures: [...document.images].every((image) => image.naturalWidth > 0),
         pictureHeight: document.querySelector('.card img').getBoundingClientRect().height,
       }));
-      assert.ok(sizes.vocabulary >= 23);
-      assert.ok(sizes.phrases >= 20);
+      assert.equal(sizes.vocabulary, 18);
+      assert.equal(sizes.phrases, 18);
       assert.ok(sizes.pictures);
-      assert.equal(sizes.pictureHeight, 112);
+      assert.equal(sizes.pictureHeight, 76);
+      for (const [index, sourcePage] of sheet.pages.entries()) {
+        const printed = page.locator('.sheet').nth(index);
+        const geometry = await printed.evaluate((sheet) => {
+          const cards = [...sheet.querySelectorAll('.card')].map((card) => card.getBoundingClientRect());
+          const grid = sheet.querySelector('.phrases');
+          const phrases = [...grid.children].map((phrase) => phrase.getBoundingClientRect());
+          const gap = parseFloat(getComputedStyle(grid).columnGap);
+          return {
+            vocabularyColumns: new Set(cards.map((card) => card.left)).size,
+            vocabularyRows: new Set(cards.map((card) => card.top)).size,
+            phraseColumns: new Set(phrases.map((phrase) => phrase.left)).size,
+            phraseRows: new Set(phrases.map((phrase) => phrase.top)).size,
+            halfWidth: phrases.every((phrase) => Math.abs(phrase.width - (grid.clientWidth - gap) / 2) < 1),
+            rowMajor: phrases.every((phrase, i) => i % 2 === 0 || phrase.top === phrases[i - 1].top),
+          };
+        });
+        assert.deepEqual(geometry, {
+          vocabularyColumns: 4, vocabularyRows: 4,
+          phraseColumns: 2, phraseRows: 6,
+          halfWidth: true, rowMajor: true,
+        });
+        assert.equal(await printed.locator('.card').count(), 16);
+        assert.equal(await printed.locator('.phrase .spanish').count(), 12);
+        assert.equal(await printed.locator('.phrase .english').count(), 12);
+        assert.deepEqual(await printed.locator('.phrase .spanish').allTextContents(),
+          sourcePage.phrases.map((phrase) => phrase.spanish));
+      }
+      assert.equal(await page.locator('header, footer, h1, .phrases h2').count(), 0);
+      assert.ok(!(await page.locator('body').innerText()).includes(sheet.title));
       const pdf = await PDFDocument.load(await page.pdf({ preferCSSPageSize: true, printBackground: true }));
       assert.equal(pdf.getPageCount(), 2);
       for (const printed of pdf.getPages()) {
@@ -60,35 +89,64 @@ describe('print renderer', () => {
     }
   });
 
-  test('maximum density fits: eight vocabulary items and three phrases per page', async (t) => {
-    const sheet = (await loadSheets())[2];
-    for (const [pageIndex, group] of sheet.pages.entries()) {
-      const originals = [...group.vocabulary];
-      while (group.vocabulary.length < 8) {
-        const item = structuredClone(originals[group.vocabulary.length - 6]);
-        item.id = `extra-${pageIndex}-${group.vocabulary.length}`;
-        group.vocabulary.push(item);
-      }
-      group.phrases.push({ spanish: 'Me cepillo los dientes antes de dormir.', english: 'I brush my teeth before going to sleep.' });
-    }
-    parseSheet(stringify(sheet), 'maximum.yaml');
+  test('smaller six-sentence custom pages still use two columns', async (t) => {
+    const sheet = (await loadSheets())[0];
+    sheet.pages = sheet.pages.slice(0, 1);
+    sheet.pages[0].phrases = sheet.pages[0].phrases.slice(0, 6);
+    parseSheet(stringify(sheet), 'smaller.yaml');
     const page = await pageFor(t, renderSheet(sheet));
     await checkLayout(page, sheet.id);
     assert.equal(await page.locator('.card img').first().evaluate((image) => image.getBoundingClientRect().height), 76);
     const pdf = await PDFDocument.load(await page.pdf({ preferCSSPageSize: true }));
-    assert.equal(pdf.getPageCount(), 2);
+    assert.equal(pdf.getPageCount(), 1);
   });
 
-  test('oversized vocabulary, phrases, and titles fail actual layout checks with page context', async (t) => {
-    for (const field of ['vocabulary', 'phrases', 'title']) {
+  test('two-column English overflow and overlapping phrase cells are rejected', async (t) => {
+    const sheet = (await loadSheets())[0];
+    sheet.pages[0].phrases[0].english = 'overflow '.repeat(250);
+    const page = await pageFor(t, renderSheet(sheet));
+    await assert.rejects(checkLayout(page, sheet.id), /layout failed/);
+    await page.setContent(renderSheet((await loadSheets())[0]), { waitUntil: 'load' });
+    await page.addStyleTag({ content: '.phrase:nth-child(2) { transform: translateX(-200px); }' });
+    await assert.rejects(checkLayout(page, sheet.id), /phrase 1 overlaps phrase 2/);
+  });
+
+  test('oversized vocabulary and sentences fail actual layout checks with page context', async (t) => {
+    for (const field of ['vocabulary', 'phrases']) {
       const sheet = (await loadSheets())[0];
       const longText = 'palabra '.repeat(250);
       if (field === 'vocabulary') sheet.pages[0].vocabulary[0].spanish = longText;
       if (field === 'phrases') sheet.pages[0].phrases[0].spanish = longText;
-      if (field === 'title') sheet.title = longText;
       const page = await pageFor(t, renderSheet(sheet));
       await assert.rejects(checkLayout(page, sheet.id), /refrigerator: layout failed:\n.*page 1/);
     }
+  });
+
+  test('titles remain accessible metadata without consuming printable space', async (t) => {
+    const sheet = (await loadSheets())[0];
+    sheet.title = 'A long title '.repeat(100);
+    sheet.subtitle = 'A long subtitle '.repeat(100);
+    const page = await pageFor(t, renderSheet(sheet));
+    await checkLayout(page, sheet.id);
+    assert.ok((await page.title()).startsWith(sheet.title));
+    assert.equal(await page.locator('.sheet').first().getAttribute('aria-label'), `${sheet.title} — page 1`);
+    assert.ok(!(await page.locator('body').innerText()).includes('A long title'));
+    assert.ok(!(await page.locator('body').innerText()).includes('A long subtitle'));
+  });
+
+  test('explicit two-page topics still render correctly with unique vocabulary IDs', async (t) => {
+    const sheet = (await loadSheets())[0];
+    sheet.pages = sheet.pages.slice(0, 1);
+    const second = structuredClone(sheet.pages[0]);
+    for (const item of second.vocabulary) item.id = `second-${item.id}`;
+    sheet.pages.push(second);
+    parseSheet(stringify(sheet), 'two-pages.yaml');
+    const page = await pageFor(t, renderSheet(sheet));
+    await checkLayout(page, sheet.id);
+    assert.equal(await page.locator('.sheet').count(), 2);
+    assert.equal(await page.locator('.phrase').count(), 24);
+    const pdf = await PDFDocument.load(await page.pdf({ preferCSSPageSize: true }));
+    assert.equal(pdf.getPageCount(), 2);
   });
 
   test('corrupt image bytes fail decoding rather than rendering a placeholder', async (t) => {

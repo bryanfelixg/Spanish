@@ -27,12 +27,6 @@ pages:
         spanish: la cuchara
         english: spoon
         image: spoon.svg
-    phrases:
-      - spanish: Pon los platos en la mesa, por favor.
-        english: Put the plates on the table, please.
-      - spanish: ¿Me pasas una cuchara?
-        english: Could you pass me a spoon?
-  - vocabulary:
       - id: pot
         spanish: la olla
         english: cooking pot
@@ -57,8 +51,134 @@ pages:
         spanish: la esponja
         english: sponge
         image: sponge.svg
+      - id: bowl
+        spanish: el tazón
+        english: bowl
+        image: bowl.svg
+      - id: lid
+        spanish: la tapa
+        english: lid
+        image: lid.svg
+      - id: napkin
+        spanish: la servilleta
+        english: napkin
+        image: napkin.svg
+      - id: trash-can
+        spanish: el bote de basura
+        english: trash can
+        image: trash-can.svg
     phrases:
-      - spanish: Calienta la sopa en el microondas.
-        english: Heat the soup in the microwave.
-      - spanish: Limpia la mesa con la esponja.
-        english: Clean the table with the sponge.
+      - spanish: Necesito un plato.
+        english: I need a plate.
+      - spanish: ¿Me pasas una cuchara?
+        english: Could you pass me a spoon?
+      - spanish: ¿Dónde está el tenedor?
+        english: Where is the fork?
+      - spanish: El vaso está limpio.
+        english: The glass is clean.
+      - spanish: Quiero una taza.
+        english: I want a cup.
+      - spanish: La olla está caliente.
+        english: The pot is hot.
+      - spanish: ¿Dónde está la tapa?
+        english: Where is the lid?
+      - spanish: La sartén está sucia.
+        english: The pan is dirty.
+      - spanish: Necesito una servilleta.
+        english: I need a napkin.
+      - spanish: La sopa está en el tazón.
+        english: The soup is in the bowl.
+      - spanish: ¿Hay una esponja?
+        english: Is there a sponge?
+      - spanish: El cuchillo está aquí.
+        english: The knife is here.
+  - vocabulary:
+      - id: bread
+        spanish: el pan
+        english: bread
+        image: bread.svg
+      - id: rice
+        spanish: el arroz
+        english: rice
+        image: rice.svg
+      - id: pasta
+        spanish: la pasta
+        english: pasta
+        image: pasta.svg
+      - id: beans
+        spanish: los frijoles
+        english: beans
+        image: beans.svg
+      - id: salt
+        spanish: la sal
+        english: salt
+        image: salt.svg
+      - id: sugar
+        spanish: el azúcar
+        english: sugar
+        image: sugar.svg
+      - id: oil
+        spanish: el aceite
+        english: oil
+        image: oil.svg
+      - id: coffee
+        spanish: el café
+        english: coffee
+        image: coffee.svg
+      - id: tea
+        spanish: el té
+        english: tea
+        image: tea.svg
+      - id: flour
+        spanish: la harina
+        english: flour
+        image: flour.svg
+      - id: oven
+        spanish: el horno
+        english: oven
+        image: oven.svg
+      - id: kitchen-sink
+        spanish: el fregadero
+        english: kitchen sink
+        image: sink.svg
+      - id: table
+        spanish: la mesa
+        english: table
+        image: table.svg
+      - id: dish-towel
+        spanish: el trapo de cocina
+        english: dish towel
+        image: towel.svg
+      - id: apron
+        spanish: el delantal
+        english: apron
+        image: apron.svg
+      - id: strainer
+        spanish: el colador
+        english: strainer
+        image: strainer.svg
+    phrases:
+      - spanish: Quiero pan, por favor.
+        english: I would like bread, please.
+      - spanish: ¿Hay arroz?
+        english: Is there any rice?
+      - spanish: Me gusta la pasta.
+        english: I like pasta.
+      - spanish: Los frijoles están calientes.
+        english: The beans are hot.
+      - spanish: ¿Me pasas la sal?
+        english: Could you pass me the salt?
+      - spanish: No quiero azúcar.
+        english: I do not want sugar.
+      - spanish: Necesito aceite.
+        english: I need oil.
+      - spanish: ¿Quieres café?
+        english: Do you want coffee?
+      - spanish: Prefiero té.
+        english: I prefer tea.
+      - spanish: Los platos están en la mesa.
+        english: The plates are on the table.
+      - spanish: El trapo está en el fregadero.
+        english: The dish towel is in the sink.
+      - spanish: ¿Dónde está el colador?
+        english: Where is the strainer?

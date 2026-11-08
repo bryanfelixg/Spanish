@@ -27,12 +27,6 @@ pages:
         spanish: el cepillo de dientes
         english: toothbrush
         image: toothbrush.svg
-    phrases:
-      - spanish: Me lavo las manos con jabón.
-        english: I wash my hands with soap.
-      - spanish: Uso champú en la ducha.
-        english: I use shampoo in the shower.
-  - vocabulary:
       - id: toothpaste
         spanish: la pasta de dientes
         english: toothpaste
@@ -57,8 +51,134 @@ pages:
         spanish: la secadora de pelo
         english: hair dryer
         image: hair-dryer.svg
+      - id: faucet
+        spanish: la llave del agua
+        english: faucet / tap
+        image: faucet.svg
+      - id: razor
+        spanish: la rasuradora
+        english: razor
+        image: razor.svg
+      - id: deodorant
+        spanish: el desodorante
+        english: deodorant
+        image: deodorant.svg
+      - id: bath-mat
+        spanish: el tapete de baño
+        english: bath mat
+        image: bath-mat.svg
     phrases:
+      - spanish: Me lavo las manos con jabón.
+        english: I wash my hands with soap.
+      - spanish: ¿Hay champú?
+        english: Is there any shampoo?
       - spanish: ¿Dónde está la pasta de dientes?
         english: Where is the toothpaste?
       - spanish: Necesito una toalla limpia.
         english: I need a clean towel.
+      - spanish: Me cepillo los dientes.
+        english: I brush my teeth.
+      - spanish: El agua está fría.
+        english: The water is cold.
+      - spanish: No hay papel higiénico.
+        english: There is no toilet paper.
+      - spanish: ¿Dónde está mi peine?
+        english: Where is my comb?
+      - spanish: La toalla está mojada.
+        english: The towel is wet.
+      - spanish: Necesito jabón.
+        english: I need soap.
+      - spanish: El espejo está limpio.
+        english: The mirror is clean.
+      - spanish: ¿Hay desodorante?
+        english: Is there any deodorant?
+  - vocabulary:
+      - id: cotton
+        spanish: el algodón
+        english: cotton
+        image: cotton.svg
+      - id: tissues
+        spanish: los pañuelos
+        english: tissues
+        image: tissues.svg
+      - id: hairbrush
+        spanish: el cepillo
+        english: hairbrush
+        image: hairbrush.svg
+      - id: lotion
+        spanish: la loción
+        english: lotion
+        image: lotion.svg
+      - id: conditioner
+        spanish: el acondicionador
+        english: conditioner
+        image: conditioner.svg
+      - id: sunscreen
+        spanish: el protector solar
+        english: sunscreen
+        image: sunscreen.svg
+      - id: nail-clippers
+        spanish: el cortauñas
+        english: nail clippers
+        image: nail-clippers.svg
+      - id: bathtub
+        spanish: la tina
+        english: bathtub
+        image: bathtub.svg
+      - id: bucket
+        spanish: la cubeta
+        english: bucket
+        image: bucket.svg
+      - id: gloves
+        spanish: los guantes
+        english: gloves
+        image: gloves.svg
+      - id: cabinet
+        spanish: el gabinete
+        english: cabinet
+        image: cabinet.svg
+      - id: trash-can
+        spanish: el bote de basura
+        english: trash can
+        image: trash-can.svg
+      - id: shelf
+        spanish: el estante
+        english: shelving unit
+        image: shelf.svg
+      - id: door
+        spanish: la puerta
+        english: door
+        image: door.svg
+      - id: light-switch
+        spanish: el interruptor
+        english: light switch
+        image: light-switch.svg
+      - id: window
+        spanish: la ventana
+        english: window
+        image: window.svg
+    phrases:
+      - spanish: Necesito un pañuelo.
+        english: I need a tissue.
+      - spanish: ¿Hay algodón?
+        english: Is there any cotton?
+      - spanish: ¿Dónde está el cepillo?
+        english: Where is the hairbrush?
+      - spanish: Uso loción.
+        english: I use lotion.
+      - spanish: No hay acondicionador.
+        english: There is no conditioner.
+      - spanish: Necesito protector solar.
+        english: I need sunscreen.
+      - spanish: El cortauñas está aquí.
+        english: The nail clippers are here.
+      - spanish: La tina está limpia.
+        english: The bathtub is clean.
+      - spanish: La cubeta está vacía.
+        english: The bucket is empty.
+      - spanish: ¿Dónde están los guantes?
+        english: Where are the gloves?
+      - spanish: El gabinete está cerrado.
+        english: The cabinet is closed.
+      - spanish: Cierra la puerta, por favor.
+        english: Close the door, please.
